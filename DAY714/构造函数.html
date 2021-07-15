@@ -4,11 +4,25 @@
 		<meta charset="utf-8">
 		<title></title>
 		<script type="text/javascript">
-			function Person(){
-					// alert("hello");
+			function Person(name , age ,gender){
+				// this.name="aaaa";
+				 this.name=name;
+				 this.age=age;
+				 this.gender=gender;
+				this.sayName=function(){
+					alert(this.name);
+				};
 			}
-			var Per=new Person();
-			console.log(Per);
+			function Dog(name){
+				this.name=name;
+			}
+			var Per=new Person("aaa",1,"NA"); 
+			var dog=new Dog("小白");
+			/* var Per2=new Person("bbb",2,"Nv");
+			var Per3=new Person("ccc",3,"Bt"); */
+			console.log(Per.age);
+			console.log(dog.name);
+			console.log(Per instanceof Person)
 		</script>
 	</head>
 	<body>
