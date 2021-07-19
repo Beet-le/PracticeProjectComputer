@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <script !src="">
-    function  Person(){
+    /*function  Person(){
 
-    }
+    }*/
     function  Myclas(){
 
     }
+    Myclas.prototype.a=123;
+    Myclas.prototype.sayHello=function (){
+        // alert("HELLO");
+        console.log("hello");
+    }
     var mc=new Myclas();
-    console.log(Person.prototype);
-    console.log(Myclas.prototype);
+    /*console.log(Person.prototype);
+    console.log(Myclas.prototype);*/
+    mc.a="我是MC中的a";
+    console.log(mc.a);
+    console.log(mc );
+    mc.sayHello();
   </script>
 </head>
 <body>
