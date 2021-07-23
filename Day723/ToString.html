@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <script !src="">
-    function  Person(name,age,gender){
-      this.name=name;
-      this.age=age;
-      this.gender=gender;
-    }
-    var per=new Person("A",1,"man")
-    var per=new Person("B",2,"Nan")
-    per.toString=function (){
-      return this.name ,this.age,this.gender
-    }
-  </script>
+    <script !src="">
+        function Person(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+        }
+
+        Person.prototype.toString = function () {
+            return this.name , this.age , this.gender
+        }
+        var per = new Person("A", 1, "man")
+        var per2 = new Person("B", 2, "Nan")
+        per.toString = function () {
+            return this.name , this.age, this.gender
+        }
+        var result = per.toString();
+        console.log(per)
+        console.log(per2)
+    </script>
 </head>
 <body>
 
